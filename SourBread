@@ -1,0 +1,111 @@
+package Bread;
+//Sour Bread Subclass
+
+public class SourBread extends Bread {
+
+
+
+    private final String flour;
+    private final String water;
+    private final String bakingPowder;
+    private final String yeast;
+    private final String breadName;
+    private final String state;
+    private String recipe;
+    private final String salt;
+    private final String sugar;
+
+    @Override
+    public String getFlour() {
+        return flour;
+    }
+
+    @Override
+    public String getWater() {
+        return water;
+    }
+
+    @Override
+    public String getBakingPowder() {
+        return bakingPowder;
+    }
+
+    @Override
+    public String getYeast() {
+        return yeast;
+    }
+
+    @Override
+    public String getBreadName() {
+        return breadName;
+    }
+
+    @Override
+    public String getState() {
+        return state;
+    }
+
+    @Override
+    public String getRecipe() {
+        return recipe;
+    }
+
+    @Override
+    public void setRecipe(String recipe) {
+        this.recipe = recipe;
+    }
+
+    @Override
+    public String getSalt() {
+        return salt;
+    }
+
+    @Override
+    public String getSugar() {
+        return sugar;
+    }
+
+    public SourBread(String flour, String water, String salt, String sugar, String bakingPowder, String yeast, String breadName, String state, String recipe) {
+        super(flour, water, salt, sugar, bakingPowder, yeast, breadName, state, recipe);
+
+        this.flour = flour;
+        this.water = water;
+        this.salt = salt;
+        this.sugar = sugar;
+        this.bakingPowder = bakingPowder;
+        this.yeast = yeast;
+        this.breadName = breadName;
+        this.state = state;
+        this.recipe = recipe;
+    }
+
+
+
+
+
+    //Recipe method
+    public String recipe1(){
+        recipe = state + """ 
+                1. Mix flour, water, salt, baking powder, yeast, and ripe sourdough starter.
+                2. Make the dough
+                3. Bulk Rise
+                4. Stretch and fold the dough
+                5. Cut and shape the dough
+                6. Second rise
+                6. Preheat the oven to 450°F towards the tail end of the second rise.
+                7. Spray the loaf with luke warm water.
+                8. Bake the bread at 400°F for 20 minutes, until deep golden brown.
+                9. Remove the bread from the oven.
+                10.Let the bread cool until good to eat.
+                Can't bake, Sourdough Bread is already baked.
+                The Sourdough Bread is baked now.\s""";
+        return recipe;
+    }
+
+
+
+    // to String Method
+    public void sourBread() {
+        System.out.println("SourDough Bread Recipe is: " + recipe1() + "SourDough Bread ingredients include: " + getIngredients());
+    }
+}
