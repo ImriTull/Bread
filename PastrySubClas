@@ -1,0 +1,56 @@
+package Bread;
+
+public class Pastry extends Bread{
+
+        private String flour;
+        private final String water;
+        private final String sugar;
+        private final String bakingPowder;
+
+
+
+    public String getFlour() {
+        return flour;
+    }
+
+    public String getWater() {
+        return water;
+    }
+
+    public String getSugar() {
+        return sugar;
+    }
+
+    public String getBakingPowder() {
+        return bakingPowder;
+    }
+
+
+    public Pastry(String flour, String water, String sugar, String bakingPowder){
+            this.flour = flour;
+            this.water = water;
+            this.sugar = sugar;
+            this.bakingPowder = bakingPowder;
+        }
+         // recipe method
+        public String recipe2(){
+        flour = bakingPowder + " 1. Mix flour, water, baking powder, and sugar. 2. Make the dough\n" +
+                "                3. Bulk Rise\n" +
+                "                4. Stretch and fold the dough\n" +
+                "                5. Cut and shape the dough\n" +
+                "                6. Second rise\n" +
+                "                6. Preheat the oven to 450°F towards the tail end of the second rise.\n" +
+                "                7. Spray the loaf with luke warm water.\n" +
+                "                8. Bake the bread at 400°F for 20 minutes, until deep golden brown.\n" +
+                "                9. Remove the bread from the oven.\n" +
+                "                10.Let the bread cool until good to eat.";
+                return flour;
+        }
+
+        // to string method
+    public void pastryBread(){
+        System.out.println("Pastry Bread recipe is: " + recipe2());
+    }
+
+
+        }
