@@ -1,0 +1,5 @@
+in this project you have at least 2 - 5 subclasses
+in each subclass you have getters and setters to define the instances
+& in each subclass you also have constructors to outline the instances and in this overall project the instances are ingredients
+for bread and different types of bread that can be created using different types of ingredients
+you are supposed to be able to print what ingredients each class takes and what the recipe is supposed to be for each class
