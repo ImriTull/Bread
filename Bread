@@ -1,0 +1,138 @@
+// superclass containing information about bread and constructors
+package Bread;
+
+public class Bread {
+    private String flour;
+    private String water;
+    private String bakingPowder;
+    private String yeast;
+    private String breadName;
+    private String state;
+    private String recipe;
+    private String salt;
+    private String sugar;
+
+    public Bread (String flour, String water, String salt, String sugar, String bakingPowder,
+                 String yeast, String breadName, String state, String recipe) {
+
+
+        this.flour = flour;
+        this.water = water;
+        this.salt = salt;
+        this.sugar = sugar;
+        this.bakingPowder = bakingPowder;
+        this.yeast = yeast;
+        this.breadName = breadName;
+        this.state = state;
+        this.recipe = recipe;
+
+    }
+
+    public Bread() {
+
+    }
+
+    // Getters and Setters
+
+    public String getFlour() {
+        return flour;
+    }
+
+    public void setFlour(String flour) {
+        this.flour = flour;
+    }
+
+    public String getWater() {
+        return water;
+    }
+
+    public void setWater(String water) {
+        this.water = water;
+    }
+
+    public String getBakingPowder() {
+        return bakingPowder;
+    }
+
+    public void setBakingPowder(String bakingPowder) {
+        this.bakingPowder = bakingPowder;
+    }
+
+    public String getYeast() {
+        return yeast;
+    }
+
+    public void setYeast(String yeast) {
+        this.yeast = yeast;
+    }
+
+    public String getBreadName() {
+        return breadName;
+    }
+
+    public void setBreadName(String breadName) {
+        this.breadName = breadName;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getRecipe() {
+        return recipe;
+    }
+
+    public void setRecipe(String recipe) {
+        this.recipe = recipe;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    public String getSugar() {
+        return sugar;
+    }
+
+    public void setSugar(String sugar) {
+        this.sugar = sugar;
+    }
+
+    // baked method
+     public void Bake(String state){
+        if(state.equals("Baked"))
+            return;
+        else
+            state = "Baked";
+     }
+
+
+      // ingredients method ( toString Method)
+
+    public String getIngredients() {
+        flour = "5.00 cups of flour";
+        water = "1.50 cups of water";
+        salt = " 2.50 tsps of salt";
+        yeast = "1.00 tsp of yeast";
+        breadName = " 1.00 cup of ripe sourdough starter";
+
+        return
+                "flour='" + flour + '\'' + ", water='" + water + '\'' + ", salt='" + salt + '\'' +
+                        ", sugar='" + sugar + '\'' + ", bakingPowder='" + bakingPowder + '\''
+                        + ", yeast='" + yeast + '\'' + ", breadName='" + breadName ;
+    }
+
+    public void rise() {
+        System.out.println("Bread is: Overall Product");
+
+
+    }
+}
